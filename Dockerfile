@@ -8,7 +8,8 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -yq \ 
     curl wget jq vim \
-    software-properties-common
+    software-properties-common \
+    libgl1-mesa-glx xvfb
 
 # RUN add-apt-repository ppa:fenics-packages/fenics
 # RUN apt-get update
