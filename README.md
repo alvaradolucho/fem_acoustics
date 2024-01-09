@@ -1,20 +1,10 @@
 # FEM Acoustics
 Sistema de Método de Elementos Finitos para Acústica
 
-En windows es necesario activar WLS mediante la terminal
+## Instalación
 
-```
-    wls --install
-```
-
-## FEniCS on Windows 10
-To install FEniCS on Windows 10, enable the Windows Subsystem for Linux and install the Ubuntu distribution. Then follow the instructions for Ubuntu below.
-
-## Ubuntu FEniCS on Ubuntu
-To install FEniCS on Ubuntu, run the following commands:
-
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:fenics-packages/fenics
-sudo apt-get update
-sudo apt-get install fenics
-For detailed instructions, see the FEniCS Reference Manua
+1. Instalar Docker Desktop.
+2. En la terminal, construir el contenedor de docker 
+```docker build -t fem-acoustics```
+3. Ejecutar el contenedor en la terminal.
+```docker run -p 8888:8888 --rm -ti fem-acoustics```
