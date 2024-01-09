@@ -48,6 +48,6 @@ RUN conda install -c conda-forge -y fenics-dolfinx \
 
 #########
 
-CMD ["/bin/bash"]
-
+# CMD ["/bin/bash"]
+# CMD ["/bin/bash", "jupyter lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root"]
 EXPOSE 8888
