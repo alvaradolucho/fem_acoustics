@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 # FROM conda/miniconda3
 
-COPY fem_analysis.ipynb /app/
+COPY tutorial_1.ipynb /app/
 # COPY requirements.txt /app/requirements.txt
 
 WORKDIR /app
@@ -31,7 +31,7 @@ RUN conda init bash
 ## RUN conda init && conda activate
 # RUN conda activate femacoustics
 RUN conda install -c conda-forge -y fenics-dolfinx \ 
-    mpich pyvista jupyterlab
+    mpich pyvista trame ipywidgets jupyterlab
 ## RUN conda install jupyter lab
 
 # CMD ["jupyter", "lab"]
